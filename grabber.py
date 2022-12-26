@@ -39,6 +39,12 @@ def main():
             save_result = open('results.txt', 'a')
             save_result.write("{}|{}|{}|{}|{}\n".format(proxy_fpl[0], proxy_fpl[1], detail_proxy_fpl[0], proxy_fpl[3], detail_proxy_fpl[2]))
             save_result.close()
+            time.sleep(100/1000)
+
+    for px_fpl in list_proxy_fpl:
+        proxy_fpl = re.findall('<td>(.*?)</td>', str(px_fpl))
+        detail_proxy_fpl = re.findall('<td class="hm">(.*?)</td>', str(px_fpl))
+        if len(proxy_fpl) > 2 and len(detail_proxy_fpl) > 2:
             ip_range.main(proxy_fpl[0], proxy_fpl[1], detail_proxy_fpl[0], proxy_fpl[3])
             time.sleep(1)
 
