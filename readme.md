@@ -1,6 +1,6 @@
 # PX-Grabber | Free Proxy Grabber v1.0
 
-![Example](./example.PNG)
+![Example](./new-example.PNG)
 
 ## Information
 Author          : https://github.com/revan-ar.
