@@ -36,7 +36,7 @@ def main(ip_address, port, country_code, anonymity):
         for loop_ip in list_other_ip:
             print('{}|{}|{}|{}|{}'.format(loop_ip.string, port, country_code, anonymity, 'Unknown'))
             save_result = open('results.txt', 'a')
-            save_result.write("{}|{}|{}|{}|{}\n".format(loop_ip, port, country_code, anonymity, 'Unknown'))
+            save_result.write("{}|{}|{}|{}|{}\n".format(loop_ip.string, port, country_code, anonymity, 'Unknown'))
             save_result.close()
             time.sleep(100/1000)
 
