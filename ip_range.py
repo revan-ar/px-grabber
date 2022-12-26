@@ -38,7 +38,7 @@ def main(ip_address, port, country_code, anonymity):
             save_result = open('results.txt', 'a')
             save_result.write("{}|{}|{}|{}|{}\n".format(loop_ip, port, country_code, anonymity, 'Unknown'))
             save_result.close()
-            time.sleep(400/1000)
+            time.sleep(100/1000)
 
 
 if __name__ == "__main__":
